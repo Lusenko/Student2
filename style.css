@@ -100,4 +100,120 @@ ul, li {
   margin: 0 auto;
 }
 
+/*Section*/
+section {
+  margin-top: 130px;
+}
+
+.pen_foods_block .third_products, .pen_foods_block .second_products, .pen_foods_block .first_products {
+  max-width: 360px;
+  width: 100%;
+  height: 241px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.text_popular_product, .pen_foods_block .text_in_products {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  color: #170C04;
+  line-height: 24px;
+  opacity: 0.6;
+}
+
+.pen_foods_block {
+  display: flex;
+  justify-content: space-around;
+}
+.pen_foods_block img {
+  position: absolute;
+  margin: -27px 148px;
+  mix-blend-mode: darken;
+}
+.pen_foods_block .first_food {
+  margin: -20px 160px;
+}
+.pen_foods_block .second_food {
+  margin: -28px 153px;
+}
+.pen_foods_block .third_food {
+  margin: -20px 162px;
+}
+.pen_foods_block .second_products {
+  border: none;
+  box-shadow: 0 0 1em #FCF2EB;
+}
+.pen_foods_block .section_for_product {
+  margin-top: 40px;
+}
+.pen_foods_block .title_in_products {
+  width: 310px;
+  height: 76px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pen_foods_block .title_in_products h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 37px;
+  color: #170C04;
+  font-family: Poppins;
+}
+.pen_foods_block .text_in_products {
+  width: 298px;
+  height: 48px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pen_foods_block .see_details_link {
+  width: 80px;
+  height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 24px;
+}
+.pen_foods_block .see_details_link li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Roboto;
+}
+.pen_foods_block .see_details_link a {
+  color: #E27B3A;
+}
+
+.popular_product {
+  padding-top: 118px;
+}
+
+.title_popular_product {
+  text-align: center;
+}
+.title_popular_product h1 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #170C04;
+  line-height: 48px;
+}
+
+.text_popular_product {
+  width: 505px;
+  height: 65px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.popular_decoration {
+  display: flex;
+  justify-content: space-around;
+}
+.popular_decoration div {
+  width: 555px;
+  height: 420px;
+  background-color: #FCF2EB;
+  border-radius: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */

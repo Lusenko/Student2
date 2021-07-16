@@ -1,0 +1,124 @@
+@import "variable";
+/*Section*/
+section{
+  margin-top: 130px;
+}
+%border_for_div{
+  max-width: 360px;
+  width: 100%;
+  height: 241px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+%p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $fontRoboto;
+    color: $mainColor;
+    line-height: 24px;
+    opacity: 0.6;
+}
+
+.pen_foods_block{
+  display: flex;
+  justify-content: space-around;
+
+  img{
+    position: absolute;
+    margin: -27px 148px;
+    mix-blend-mode: darken;
+  }
+  .first_food{
+    margin: -20px 160px;
+  }
+  .second_food{
+    margin: -28px 153px;
+  }
+  .third_food{
+    margin: -20px 162px;
+  }
+  .first_products{
+    @extend %border_for_div;
+  }
+  .second_products{
+    @extend %border_for_div;
+    border: none;
+    box-shadow: 0 0 1em $lightOrangeColor;
+  }
+  .third_products{
+    @extend %border_for_div;
+  }
+  .section_for_product{
+    margin-top: 40px;
+  }
+  .title_in_products{
+    width: 310px;
+    height: 76px;
+    margin: 0 auto;
+    text-align: center;
+
+    h3{
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 37px;
+      color: $mainColor;
+      font-family: $fontPoppins;
+    }
+  }
+  .text_in_products{
+    width: 298px;
+    height: 48px;
+    margin: 0 auto;
+    text-align: center;
+    @extend %p;
+  }
+  .see_details_link{
+    width: 80px;
+    height: 24px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 24px;
+
+    li{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      font-family: $fontRoboto;
+    }
+    a{
+      color: $orangeColor;
+    }
+  }
+}
+.popular_product{
+  padding-top: 118px;
+
+}
+.title_popular_product{
+  text-align: center;
+
+  h1{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: $fontPoppins;
+    color: $mainColor;
+    line-height: 48px;
+  }
+}
+.text_popular_product{
+  width: 505px;
+  height: 65px;
+  text-align: center;
+  margin: 0 auto;
+  @extend %p;
+}
+.popular_decoration{
+  display: flex;
+  justify-content: space-around;
+  div{
+    width: 555px;
+    height: 420px;
+    background-color: $lightOrangeColor;
+    border-radius: 8px;
+  }
+}
