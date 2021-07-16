@@ -23,6 +23,7 @@ $purpleColor: #243D7E;
 .menu_block_img{
   align-items: center;
   display: flex;
+  padding-right: 260px;
 
   img{
     padding-right: 5px;
@@ -34,6 +35,7 @@ $purpleColor: #243D7E;
   }
 }
 .link_menu{
+  padding-right: 70px;
   ul{
     display: flex;
     font-size: 16px;
@@ -50,5 +52,24 @@ $purpleColor: #243D7E;
 .search_menu_block{
   img{
     padding-right: 40px;
+  }
+}
+.section_in_header{
+  display: flex;
+}
+.title_in_header{
+  padding: 150px 0 0 70px;
+  h1{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120px;
+    font-family: $fontPoppins;
+    color: $mainColor;
+  }
+}
+.img_in_header{
+  padding-top: 50px;
+  img{
+    mix-blend-mode: darken;
   }
 }
