@@ -2,7 +2,7 @@
 .header {
   max-width: 100%;
   height: 693px;
-  background: linear-gradient(113deg, #fff 70%, #FCF2EB 30%);
+  background: linear-gradient(106deg, #fff 72%, #FCF2EB 28%);
 }
 
 .menu {
@@ -208,12 +208,61 @@ section {
 .popular_decoration {
   display: flex;
   justify-content: space-around;
+  margin-top: 25px;
 }
 .popular_decoration div {
   width: 555px;
   height: 420px;
   background-color: #FCF2EB;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.popular_decoration img {
+  mix-blend-mode: darken;
+  margin: 0 auto;
+}
+
+.title_for_decoration {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+.title_for_decoration h5 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Poppins;
+  line-height: 37px;
+}
+.title_for_decoration .link_decoration {
+  text-align: center;
+  padding-top: 9px;
+}
+.title_for_decoration .link_decoration a {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  line-height: 19px;
+  color: #E27B3A;
+}
+
+.block_dog_collar {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 66px;
+}
+.block_dog_collar div {
+  width: 360px;
+  height: 273px;
+  background-color: #FCF2EB;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.block_dog_collar img {
+  mix-blend-mode: darken;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

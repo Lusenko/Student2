@@ -115,10 +115,61 @@ section{
 .popular_decoration{
   display: flex;
   justify-content: space-around;
+  margin-top: 25px;
+
   div{
     width: 555px;
     height: 420px;
     background-color: $lightOrangeColor;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  img{
+    mix-blend-mode: darken;
+    margin: 0 auto;
+  }
+}
+.title_for_decoration{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+
+  h5{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: $fontPoppins;
+    line-height: 37px;
+  }
+
+  .link_decoration{
+    text-align: center;
+    padding-top: 9px;
+
+    a{
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $fontRoboto;
+      line-height: 19px;
+      color: $orangeColor;
+    }
+  }
+}
+.block_dog_collar{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 66px;
+  div{
+    width: 360px;
+    height: 273px;
+    background-color: $lightOrangeColor;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  img{
+    mix-blend-mode: darken;
+    margin: 0 auto;
   }
 }
