@@ -93,6 +93,7 @@ section{
       font-family: $fontRoboto;
     }
     a{
+      @extend %a;
       color: $orangeColor;
     }
   }
@@ -194,7 +195,10 @@ section{
   .link_decoration{
     text-align: center;
     padding-top: 17px;
-    @extend %a;
+
+    a{
+      @extend %a;
+    }
   }
 }
 .button_for_leash{
@@ -363,4 +367,49 @@ section{
     border: none;
     background: $orangeColor;
   }
+}
+.products_gallery{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 130px;
+
+  .popular_product_block{
+    max-width: 554px;
+    .o-popular_product{
+      text-align: center;
+
+      h1{
+        font-size: 32px;
+        font-weight: 500;
+        font-family: $fontPoppins;
+        line-height: 45px;
+        color: $mainColor;
+      }
+      p{
+        @extend %p;
+      }
+    }
+    .o-block_with_img{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 15px;
+      .o-product_img{
+        width: 262px;
+        height: 170px;
+        background-color: #900A08;
+        border-radius: 5px;
+      }
+      .images{
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .popular_product_img{
+    width: 555px;
+    height: 509px;
+    background: rgba(196,21,75,0.1);
+    border-radius: 10px;
+  }
+
 }

@@ -65,6 +65,7 @@
 }
 
 .img_in_header {
+  mix-blend-mode: darken;
   padding-top: 50px;
 }
 
@@ -110,7 +111,7 @@ section {
   border-radius: 8px;
 }
 
-.text_for_subscription p, .dog_care .dog_care_text div p, .text_popular_product, .pen_foods_block .text_in_products {
+.products_gallery .popular_product_block .o-popular_product p, .text_for_subscription p, .dog_care .dog_care_text div p, .text_popular_product, .pen_foods_block .text_in_products {
   font-size: 16px;
   font-weight: 400;
   font-family: Roboto;
@@ -119,7 +120,7 @@ section {
   opacity: 0.6;
 }
 
-.text_for_subscription a, .title_for_leash .link_decoration {
+.text_for_subscription a, .title_for_leash .link_decoration a, .pen_foods_block .see_details_link a {
   font-size: 16px;
   font-weight: 400;
   font-family: Roboto;
@@ -286,7 +287,6 @@ section {
   text-align: center;
   padding-top: 17px;
 }
-
 .button_for_leash {
   display: flex;
   justify-content: center;
@@ -438,6 +438,46 @@ section {
   border-radius: 24px;
   border: none;
   background: #E27B3A;
+}
+
+.products_gallery {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 130px;
+}
+.products_gallery .popular_product_block {
+  max-width: 554px;
+}
+.products_gallery .popular_product_block .o-popular_product {
+  text-align: center;
+}
+.products_gallery .popular_product_block .o-popular_product h1 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: Poppins;
+  line-height: 45px;
+  color: #170C04;
+}
+.products_gallery .popular_product_block .o-block_with_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.products_gallery .popular_product_block .o-block_with_img .o-product_img {
+  width: 262px;
+  height: 170px;
+  background-color: #900A08;
+  border-radius: 5px;
+}
+.products_gallery .popular_product_block .o-block_with_img .images {
+  margin-bottom: 30px;
+}
+.products_gallery .popular_product_img {
+  width: 555px;
+  height: 509px;
+  background: rgba(196, 21, 75, 0.1);
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
