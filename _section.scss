@@ -394,11 +394,30 @@ section{
       flex-wrap: wrap;
       justify-content: space-between;
       padding-top: 15px;
+
       .o-product_img{
+        display: flex;
         width: 262px;
         height: 170px;
         background-color: #900A08;
         border-radius: 5px;
+
+        img{
+          padding: 20px 40px;
+          mix-blend-mode: darken;
+        }
+      }
+      .first{
+        background-color: rgba(144,10,8,0.1);
+      }
+      .second{
+        background-color: rgba(36,61,126,0.1);
+      }
+      .third{
+        background-color: rgba(128,1,7,0.1);
+      }
+      .fourth{
+        background-color: rgba(196,140,174,0.1);
       }
       .images{
         margin-bottom: 30px;
@@ -410,6 +429,12 @@ section{
     height: 509px;
     background: rgba(196,21,75,0.1);
     border-radius: 10px;
+    display: flex;
+
+    img{
+      padding: 39px 46px;
+      mix-blend-mode: darken;
+    }
   }
 
 }
