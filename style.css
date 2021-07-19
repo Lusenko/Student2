@@ -67,9 +67,6 @@
 .img_in_header {
   padding-top: 50px;
 }
-.img_in_header img {
-  mix-blend-mode: darken;
-}
 
 body {
   padding: 0;
@@ -247,12 +244,12 @@ section {
   color: #E27B3A;
 }
 
-.block_dog_collar {
+.block_dog_leash {
   display: flex;
   justify-content: space-around;
   padding-top: 66px;
 }
-.block_dog_collar div {
+.block_dog_leash div {
   width: 360px;
   height: 273px;
   background-color: #FCF2EB;
@@ -260,9 +257,51 @@ section {
   display: flex;
   align-items: center;
 }
-.block_dog_collar img {
+.block_dog_leash img {
   mix-blend-mode: darken;
   margin: 0 auto;
+}
+
+.title_for_leash {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 13px;
+}
+.title_for_leash h5 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Poppins;
+  line-height: 30px;
+  text-align: center;
+}
+.title_for_leash .link_decoration {
+  text-align: center;
+  padding-top: 17px;
+}
+.title_for_leash .link_decoration a {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  line-height: 18px;
+  color: #E27B3A;
+}
+
+.button_for_leash {
+  display: flex;
+  justify-content: center;
+  padding-top: 46px;
+}
+.button_for_leash button {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  line-height: 24px;
+  color: #E27B3A;
+  background: #fff;
+  padding: 12px 30px;
+  border: 1px solid rgba(226, 123, 58, 0.15);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

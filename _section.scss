@@ -156,7 +156,7 @@ section{
     }
   }
 }
-.block_dog_collar{
+.block_dog_leash{
   display: flex;
   justify-content: space-around;
   padding-top: 66px;
@@ -171,5 +171,47 @@ section{
   img{
     mix-blend-mode: darken;
     margin: 0 auto;
+  }
+}
+.title_for_leash{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 13px;
+  h5{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: $fontPoppins;
+    line-height: 30px;
+    text-align: center;
+  }
+  .link_decoration{
+    text-align: center;
+    padding-top: 17px;
+    a{
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $fontRoboto;
+      line-height: 18px;
+      color: $orangeColor;
+    }
+  }
+}
+.button_for_leash{
+  display: flex;
+  justify-content: center;
+  padding-top: 46px;
+
+  button{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $fontRoboto;
+    line-height: 24px;
+    color: $orangeColor;
+    background: #fff;
+
+    padding: 12px 30px;
+    border: 1px solid rgba(226,123,58,0.15);
+    box-sizing: border-box;
+    border-radius: 4px;
   }
 }
