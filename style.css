@@ -111,7 +111,7 @@ section {
   border-radius: 8px;
 }
 
-.products_gallery .popular_product_block .o-popular_product p, .text_for_subscription p, .dog_care .dog_care_text div p, .text_popular_product, .pen_foods_block .text_in_products {
+.products_testimonial .text_testimonial, .products_gallery .popular_product_block .o-popular_product p, .text_for_subscription p, .dog_care .dog_care_text div p, .text_popular_product, .pen_foods_block .text_in_products {
   font-size: 16px;
   font-weight: 400;
   font-family: Roboto;
@@ -126,6 +126,14 @@ section {
   font-family: Roboto;
   line-height: 18px;
   color: #E27B3A;
+}
+
+.products_testimonial .title_testimonial h1, .products_gallery .popular_product_block .o-popular_product h1, .title_for_subscription h1, .dog_care .dog_care_text div h1, .title_popular_product h1 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: Poppins;
+  line-height: 45px;
+  color: #170C04;
 }
 
 .pen_foods_block {
@@ -196,14 +204,6 @@ section {
 .title_popular_product {
   text-align: center;
 }
-.title_popular_product h1 {
-  font-size: 32px;
-  font-weight: 500;
-  font-family: Poppins;
-  color: #170C04;
-  line-height: 48px;
-}
-
 .text_popular_product {
   width: 505px;
   height: 65px;
@@ -325,13 +325,6 @@ section {
 .dog_care .dog_care_text div {
   width: 487px;
 }
-.dog_care .dog_care_text div h1 {
-  font-size: 32px;
-  font-weight: 500;
-  font-family: Poppins;
-  line-height: 45px;
-  color: #170C04;
-}
 .dog_care .dog_care_button {
   display: flex;
   padding-top: 40px;
@@ -382,11 +375,6 @@ section {
   width: 505px;
 }
 .title_for_subscription h1 {
-  font-size: 32px;
-  font-weight: 500;
-  font-family: Poppins;
-  line-height: 45px;
-  color: #170C04;
   padding: 0 20px;
 }
 
@@ -451,13 +439,6 @@ section {
 .products_gallery .popular_product_block .o-popular_product {
   text-align: center;
 }
-.products_gallery .popular_product_block .o-popular_product h1 {
-  font-size: 32px;
-  font-weight: 500;
-  font-family: Poppins;
-  line-height: 45px;
-  color: #170C04;
-}
 .products_gallery .popular_product_block .o-block_with_img {
   display: flex;
   flex-wrap: wrap;
@@ -500,6 +481,60 @@ section {
 .products_gallery .popular_product_img img {
   padding: 39px 46px;
   mix-blend-mode: darken;
+}
+
+.products_testimonial {
+  padding-top: 120px;
+}
+.products_testimonial .title_testimonial {
+  text-align: center;
+}
+.products_testimonial .block_with_testimonial {
+  width: 555px;
+  height: 272px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
+  margin: 0 auto;
+  margin-top: 52px;
+}
+.products_testimonial .icon {
+  display: flex;
+}
+.products_testimonial .icon .commas {
+  opacity: 0.06;
+  padding: 30px;
+}
+.products_testimonial .icon .user {
+  padding-left: 170px;
+}
+.products_testimonial .text_testimonial {
+  text-align: center;
+  margin: 0 auto;
+  width: 495px;
+}
+.products_testimonial .mark {
+  text-align: center;
+}
+.products_testimonial .checked {
+  color: #E27B3A;
+}
+.products_testimonial .text_with_commas .name_street {
+  display: flex;
+}
+.products_testimonial .text_with_commas .name_street h1 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  line-height: 24px;
+  color: #170C04;
+}
+.products_testimonial .text_with_commas .name_street p {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Roboto;
+  line-height: 24px;
+  color: #170C04;
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=style.css.map */

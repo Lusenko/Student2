@@ -1,74 +1,17 @@
-/*Header*/
-.header {
-  max-width: 100%;
-  height: 693px;
-  background: linear-gradient(113deg, #fff 70%, #FCF2EB 30%);
-}
+/* Error: Undefined variable.
+ *    ,
+ * 12 |   font-family: $fontRoboto;
+ *    |                ^^^^^^^^^^^
+ *    '
+ *   header.scss 12:16  root stylesheet */
 
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-top: 30px;
-  font-family: Roboto;
-  color: #170C04;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 12 \2502    font-family: $fontRoboto;\d\a    \2502                 ^^^^^^^^^^^\a    \2575 \a   header.scss 12:16  root stylesheet";
 }
-
-.menu_block_img {
-  align-items: center;
-  display: flex;
-  padding-right: 260px;
-}
-.menu_block_img img {
-  padding-right: 5px;
-}
-.menu_block_img p {
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 25px;
-}
-
-.link_menu {
-  padding-right: 70px;
-}
-.link_menu ul {
-  display: flex;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-}
-.link_menu a {
-  color: #170C04;
-}
-
-.ul_link {
-  padding-right: 55px;
-}
-
-.search_menu_block img {
-  padding-right: 40px;
-}
-
-.section_in_header {
-  display: flex;
-}
-
-.title_in_header {
-  padding: 150px 0 0 70px;
-}
-.title_in_header h1 {
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 120px;
-  font-family: Poppins;
-  color: #170C04;
-}
-
-.img_in_header {
-  padding-top: 50px;
-}
-.img_in_header img {
-  mix-blend-mode: darken;
-}
-
-/*# sourceMappingURL=header.css.map */

@@ -25,6 +25,13 @@ section{
   line-height: 18px;
   color: $orangeColor;
 }
+%h1{
+  font-size: 32px;
+  font-weight: 500;
+  font-family: $fontPoppins;
+  line-height: 45px;
+  color: $mainColor;
+}
 
 .pen_foods_block{
   display: flex;
@@ -106,11 +113,7 @@ section{
   text-align: center;
 
   h1{
-    font-size: 32px;
-    font-weight: 500;
-    font-family: $fontPoppins;
-    color: $mainColor;
-    line-height: 48px;
+    @extend %h1;
   }
 }
 .text_popular_product{
@@ -241,11 +244,7 @@ section{
       width: 487px;
 
       h1{
-        font-size: 32px;
-        font-weight: 500;
-        font-family: $fontPoppins;
-        line-height: 45px;
-        color: $mainColor;
+        @extend %h1;
       }
       p{
         @extend %p;
@@ -305,11 +304,7 @@ section{
   width: 505px;
 
   h1{
-    font-size: 32px;
-    font-weight: 500;
-    font-family: $fontPoppins;
-    line-height: 45px;
-    color: $mainColor;
+    @extend %h1;
 
     padding: 0 20px;
   }
@@ -379,11 +374,7 @@ section{
       text-align: center;
 
       h1{
-        font-size: 32px;
-        font-weight: 500;
-        font-family: $fontPoppins;
-        line-height: 45px;
-        color: $mainColor;
+        @extend %h1;
       }
       p{
         @extend %p;
@@ -436,5 +427,64 @@ section{
       mix-blend-mode: darken;
     }
   }
+}
+.products_testimonial{
+  padding-top: 120px;
+  .title_testimonial{
+    text-align: center;
+    h1{
+      @extend %h1;
+    }
+  }
+  .block_with_testimonial{
 
+    width: 555px;
+    height: 272px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
+    margin: 0 auto;
+    margin-top: 52px;
+  }
+  .icon{
+    display: flex;
+    .commas{
+      opacity: 0.06;
+      padding: 30px;
+    }
+    .user{
+      padding-left: 170px;
+    }
+  }
+  .text_testimonial{
+    text-align: center;
+    margin: 0 auto;
+    width: 495px;
+    @extend %p;
+  }
+  .mark{
+    text-align: center;
+  }
+  .checked{
+    color: $orangeColor;
+  }
+  .text_with_commas{
+    .name_street{
+      display: flex;
+      h1{
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $fontRoboto;
+        line-height: 24px;
+        color: $mainColor;
+      }
+      p{
+        font-size: 12px;
+        font-weight: 400;
+        font-family: $fontRoboto;
+        line-height: 24px;
+        color: $mainColor;
+        opacity: 0.6;
+      }
+    }
+  }
 }
