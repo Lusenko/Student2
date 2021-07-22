@@ -55,13 +55,25 @@ section{
   .first_products{
     @extend %border_for_div;
   }
+  .first_products:hover{
+    box-shadow: 0 0 20px $lightOrangeColor;
+    transition: 0.5s;
+  }
   .second_products{
     @extend %border_for_div;
     border: none;
     box-shadow: 0 0 1em $lightOrangeColor;
   }
+  .second_products:hover{
+    box-shadow: 0 0 20px $orangeColor;
+    transition: 0.5s;
+  }
   .third_products{
     @extend %border_for_div;
+  }
+  .third_products:hover{
+    box-shadow: 0 0 20px $lightOrangeColor;
+    transition: 0.5s;
   }
   .section_for_product{
     margin-top: 40px;

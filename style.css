@@ -9,14 +9,14 @@
   margin-top: 330px;
 }
 .header .button_prev img {
-  padding: 0 30px;
+  margin: 0 15px;
   transform: rotate(270deg);
 }
 .header .button_next {
   margin-top: 330px;
 }
 .header .button_next img {
-  padding: 0 30px;
+  margin: 0 -25px;
   transform: rotate(90deg);
 }
 
@@ -184,9 +184,21 @@ section {
 .pen_foods_block .third_food {
   margin: -20px 162px;
 }
+.pen_foods_block .first_products:hover {
+  box-shadow: 0 0 20px #FCF2EB;
+  transition: 0.5s;
+}
 .pen_foods_block .second_products {
   border: none;
   box-shadow: 0 0 1em #FCF2EB;
+}
+.pen_foods_block .second_products:hover {
+  box-shadow: 0 0 20px #E27B3A;
+  transition: 0.5s;
+}
+.pen_foods_block .third_products:hover {
+  box-shadow: 0 0 20px #FCF2EB;
+  transition: 0.5s;
 }
 .pen_foods_block .section_for_product {
   margin-top: 40px;
