@@ -25,6 +25,9 @@
 <body>
 <header>
     <div class="header">
+        <div class="button_prev">
+            <img class="swiper-button-pr" src="images/Vector11.svg" alt="">
+        </div>
         <div class="container">
             <div class="menu">
                 <div class="menu_block_img">
@@ -45,46 +48,46 @@
                     <img src="images/Group%201.svg" alt="">
                 </div>
             </div>
-            <div class="swiper-container-header">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="section_in_header">
-                            <div class="title_in_header">
-                                <h1>Dog is my Copilot.</h1>
+            <div class="header_block">
+                <div class="swiper-container-header">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="section_in_header">
+                                <div class="title_in_header">
+                                    <h1>Dog is my Copilot.</h1>
+                                </div>
+                                <div class="img_in_header">
+                                    <img src="images/firstDog-removebg-preview.png" alt="">
+                                </div>
                             </div>
-                            <div class="img_in_header">
-                                <img src="images/firstDog-removebg-preview.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section_in_header">
+                                <div class="title_in_header">
+                                    <h1>Dog is my Copilot.</h1>
+                                </div>
+                                <div class="img_in_header">
+                                    <img src="images/secondDog-removebg-preview.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section_in_header">
+                                <div class="title_in_header">
+                                    <h1>Dog is my Copilot.</h1>
+                                </div>
+                                <div class="img_in_header">
+                                    <img src="images/thirdDog-removebg-preview.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="section_in_header">
-                            <div class="title_in_header">
-                                <h1>Dog is my Copilot.</h1>
-                            </div>
-                            <div class="img_in_header">
-                                <img src="images/secondDog-removebg-preview.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="section_in_header">
-                            <div class="title_in_header">
-                                <h1>Dog is my Copilot.</h1>
-                            </div>
-                            <div class="img_in_header">
-                                <img src="images/thirdDog-removebg-preview.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination-header"></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination-header"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
+        </div>
+        <div class="button_next">
+            <img class="swiper-button-nx" src="images/Vector11.svg" alt="">
         </div>
     </div>
 </header>
@@ -477,8 +480,8 @@
 
         // Navigation arrows
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-nx',
+            prevEl: '.swiper-button-pr',
         },
     });
 </script>

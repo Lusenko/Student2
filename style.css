@@ -1,8 +1,23 @@
 /*Header*/
 .header {
+  display: flex;
   max-width: 100%;
   height: 693px;
   background: linear-gradient(106deg, #fff 72%, #FCF2EB 28%);
+}
+.header .button_prev {
+  margin-top: 330px;
+}
+.header .button_prev img {
+  padding: 0 30px;
+  transform: rotate(270deg);
+}
+.header .button_next {
+  margin-top: 330px;
+}
+.header .button_next img {
+  padding: 0 30px;
+  transform: rotate(90deg);
 }
 
 .menu {
@@ -57,6 +72,7 @@
   padding: 150px 0 0 70px;
 }
 .title_in_header h1 {
+  width: 550px;
   font-size: 100px;
   font-weight: 700;
   line-height: 120px;
@@ -65,8 +81,11 @@
 }
 
 .img_in_header {
-  height: 529px;
-  padding-top: 50px;
+  width: 700px;
+  height: 616px;
+}
+.img_in_header img {
+  width: 850px;
 }
 
 .swiper-container-header {
@@ -75,6 +94,7 @@
 }
 
 .swiper-pagination-header {
+  margin-top: -30px;
   text-align: center;
 }
 
@@ -104,12 +124,12 @@ ul, li {
 
 .container {
   width: 1400px;
-  height: 693px;
   margin: 0 auto;
 }
 
 /*Section*/
 section {
+  min-height: 100%;
   margin-top: 130px;
 }
 
