@@ -11,12 +11,12 @@ section{
   border-radius: 8px;
 }
 %p{
-    font-size: 16px;
-    font-weight: 400;
-    font-family: $fontRoboto;
-    color: $mainColor;
-    line-height: 24px;
-    opacity: 0.6;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $fontRoboto;
+  color: $mainColor;
+  line-height: 24px;
+  opacity: 0.6;
 }
 %a{
   font-size: 16px;
@@ -436,55 +436,143 @@ section{
       @extend %h1;
     }
   }
-  .block_with_testimonial{
-
+  .swiper-container{
     width: 555px;
     height: 272px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
-    margin: 0 auto;
-    margin-top: 52px;
   }
-  .icon{
+  .section_with_testimonial{
     display: flex;
-    .commas{
-      opacity: 0.06;
-      padding: 30px;
-    }
-    .user{
-      padding-left: 170px;
-    }
-  }
-  .text_testimonial{
-    text-align: center;
+    width: 575px;
+    padding-top: 52px;
     margin: 0 auto;
-    width: 495px;
-    @extend %p;
-  }
-  .mark{
-    text-align: center;
-  }
-  .checked{
-    color: $orangeColor;
-  }
-  .text_with_commas{
-    .name_street{
+    .block_with_testimonial{
+
+      width: 555px;
+      height: 272px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
+      margin: 0 auto;
+    }
+    .icon{
       display: flex;
-      h1{
-        font-size: 16px;
-        font-weight: 400;
-        font-family: $fontRoboto;
-        line-height: 24px;
-        color: $mainColor;
+      .commas{
+        opacity: 0.06;
+        padding: 30px 0 0 30px;
       }
-      p{
-        font-size: 12px;
-        font-weight: 400;
-        font-family: $fontRoboto;
-        line-height: 24px;
-        color: $mainColor;
-        opacity: 0.6;
+      .user{
+        padding: 30px 0 0 190px;
       }
+    }
+    .text_testimonial{
+      text-align: center;
+      margin: 0 auto;
+      width: 495px;
+      @extend %p;
+    }
+    .mark{
+      text-align: center;
+    }
+    .checked{
+      color: $orangeColor;
+    }
+    .text_with_commas{
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 20px;
+      .name_street{
+        text-align: center;
+        padding-right: 150px;
+        h1{
+          font-size: 16px;
+          font-weight: 400;
+          font-family: $fontRoboto;
+          line-height: 24px;
+          color: $mainColor;
+        }
+        p{
+          font-size: 12px;
+          font-weight: 400;
+          font-family: $fontRoboto;
+          line-height: 24px;
+          color: $mainColor;
+          margin: 0;
+          opacity: 0.6;
+        }
+      }
+      .block_commas{
+        img{
+          padding-right: 30px;
+          opacity: 0.1;
+        }
+      }
+    }
+    .arrow_block{
+      text-align: center;
+      margin-block-start: auto;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      .arrow-next{
+        transform: rotate(180deg);
+        opacity: 0.5;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+.blue_container{
+  display: flex;
+  justify-content: space-around;
+  width: 1140px;
+  height: 346px;
+  background: #2E96FF;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 86px;
+  transform: rotate(359deg);
+
+  .text_for_blue_con{
+    width: 423px;
+    padding-top: 102px;
+    transform: rotate(1deg);
+    h1{
+      font-size: 31px;
+      font-weight: 500;
+      font-family: $fontPoppins;
+      line-height: 40px;
+      color: #fff;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $fontRoboto;
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+  .input_message{
+    display: flex;
+    transform: rotate(1deg);
+    margin-top: 132px;
+    width: 487px;
+    height: 70px;
+
+    .message{
+      width: 100%;
+      border-radius: 10px 0 0 10px;
+      border: none;
+    }
+    .button_message{
+      width: 115px;
+
+      background: $orangeColor;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: $fontRoboto;
+      line-height: 40px;
+      color: #fff;
+
+      border-radius: 0 10px 10px 0;
+      border: none;
     }
   }
 }
