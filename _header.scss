@@ -61,6 +61,13 @@
   }
 }
 .img_in_header{
-  mix-blend-mode: darken;
+  height: 529px;
   padding-top: 50px;
+}
+.swiper-container-header{
+  width: 1400px;
+  overflow: hidden;
+}
+.swiper-pagination-header{
+  text-align: center;
 }
