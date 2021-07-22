@@ -56,7 +56,7 @@ section{
     @extend %border_for_div;
   }
   .first_products:hover{
-    box-shadow: 0 0 20px $lightOrangeColor;
+    box-shadow: 0 0 20px $orangeColor;
     transition: 0.5s;
   }
   .second_products{
@@ -72,7 +72,7 @@ section{
     @extend %border_for_div;
   }
   .third_products:hover{
-    box-shadow: 0 0 20px $lightOrangeColor;
+    box-shadow: 0 0 20px $orangeColor;
     transition: 0.5s;
   }
   .section_for_product{
