@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="tingle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -93,6 +94,7 @@
 </header>
 <section>
     <div class="section">
+        <img onclick="" src="images/Vector11.svg" alt="">
         <div class="container">
             <div class="pen_foods_block">
                 <div class="first_products">
@@ -222,10 +224,10 @@
                 </svg>
                 <div class="dog_care_text">
                     <h2>Dog Care</h2>
-                    <div>
+                    <div class="dog-care-title">
                         <h1>Start your adoption journey with us</h1>
                     </div>
-                    <div>
+                    <div class="dog-care-text">
                         <p>A dog in heat needs more than shade
                             The more people I meet the more I
                             like my dog.The more people I meet
@@ -233,7 +235,30 @@
                             prints forever on our hearts.</p>
                     </div>
                     <div class="dog_care_button">
-                        <button class="c-button_appointment">Appointment Now</button>
+                        <button id="modal-button" class="c-button_appointment" onclick="openModel()">Appointment Now</button>
+                        <div id="modalBlock" aria-modal="true" class="modal-block">
+                            <div id="modalContent" class="modal-content">
+                                <span class="close" onclick="closeM()">&times;</span>
+                                <div class="modal-title">
+                                    <h1>Popular Products</h1>
+                                </div>
+                                <div class="block-with-text">
+                                    <div class="popular-product-title">
+                                        <h1>Start your adoption journey with us</h1>
+                                    </div>
+                                    <div class="popular-product-text">
+                                        <p>A dog in heat needs more than shade The
+                                            more people I meet the more I like my dog.
+                                            The more people I meet the more I like my
+                                            Dogs leave paw prints forever on our hearts.</p>
+                                    </div>
+                                </div>
+                                <div class="block-with-button">
+                                    <button class="c-button_appointment">Appointment Now</button>
+                                    <button class="c-button_details">See Details</button>
+                                </div>
+                            </div>
+                        </div>
                         <button class="c-button_details">See Details</button>
                     </div>
                 </div>
@@ -466,8 +491,7 @@
             prevEl: '.arrow-prev',
         },
     });
-</script>
-<script>
+
     const headerSwiper = new Swiper('.swiper-container-header', {
         // Optional parameters
         direction: 'horizontal',
@@ -484,6 +508,28 @@
             prevEl: '.swiper-button-pr',
         },
     });
+</script>
+<script>
+    var modal = document.getElementById("modalBlock");
+    var button = document.getElementById("modal-button");
+    var span = document.getElementsByClassName("close")[0];
+    var myModel = document.querySelector(".modal-content");
+
+    button.onclick = function(){
+        myModel.classList.add('visible');
+    }
+    span.onclick = function (){
+        myModel.classList.remove('visible');
+    }
+    window.onclick = function (event){
+        if(event.target == modal){
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script>
+
+
 </script>
 </body>
 </html>

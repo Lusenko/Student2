@@ -141,7 +141,7 @@ section {
   border-radius: 8px;
 }
 
-.products_testimonial .section_with_testimonial .text_testimonial, .products_gallery .popular_product_block .o-popular_product p, .text_for_subscription p, .dog_care .dog_care_text div p, .text_popular_product, .pen_foods_block .text_in_products {
+.products_testimonial .section_with_testimonial .text_testimonial, .products_gallery .popular_product_block .o-popular_product p, .text_for_subscription p, .modal-block .modal-content .block-with-text .popular-product-text p, .dog_care .dog_care_text p, .text_popular_product, .pen_foods_block .text_in_products {
   font-size: 16px;
   font-weight: 400;
   font-family: Roboto;
@@ -158,7 +158,7 @@ section {
   color: #E27B3A;
 }
 
-.products_testimonial .title_testimonial h1, .products_gallery .popular_product_block .o-popular_product h1, .title_for_subscription h1, .dog_care .dog_care_text div h1, .title_popular_product h1 {
+.products_testimonial .title_testimonial h1, .products_gallery .popular_product_block .o-popular_product h1, .title_for_subscription h1, .modal-block .modal-content .block-with-text .popular-product-title h1, .dog_care .dog_care_text h1, .title_popular_product h1 {
   font-size: 32px;
   font-weight: 500;
   font-family: Poppins;
@@ -185,7 +185,7 @@ section {
   margin: -20px 162px;
 }
 .pen_foods_block .first_products:hover {
-  box-shadow: 0 0 20px #FCF2EB;
+  box-shadow: 0 0 20px #E27B3A;
   transition: 0.5s;
 }
 .pen_foods_block .second_products {
@@ -197,7 +197,7 @@ section {
   transition: 0.5s;
 }
 .pen_foods_block .third_products:hover {
-  box-shadow: 0 0 20px #FCF2EB;
+  box-shadow: 0 0 20px #E27B3A;
   transition: 0.5s;
 }
 .pen_foods_block .section_for_product {
@@ -352,6 +352,7 @@ section {
   display: flex;
 }
 .dog_care .dog_care_text {
+  width: 487px;
   padding-top: 155px;
 }
 .dog_care .dog_care_text h2 {
@@ -363,9 +364,6 @@ section {
   color: #E27B3A;
   opacity: 0.8;
   letter-spacing: 0.2em;
-}
-.dog_care .dog_care_text div {
-  width: 487px;
 }
 .dog_care .dog_care_button {
   display: flex;
@@ -411,6 +409,118 @@ section {
   width: 70px;
 }
 
+.modal-block {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+.modal-block .modal-content {
+  width: 55%;
+  height: 400px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-name: slideIn;
+  animation-duration: 1s;
+}
+.modal-block .modal-content .modal-title {
+  background: #E27B3A;
+  border-radius: 10px 10px 0 0;
+}
+.modal-block .modal-content .modal-title h1 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: Poppins;
+  line-height: 45px;
+  color: #fff;
+  padding: 15px;
+}
+.modal-block .modal-content .block-with-text {
+  width: 500px;
+  margin: 0 auto;
+}
+.modal-block .modal-content .block-with-text .popular-product-title h1 {
+  padding: 15px;
+  text-align: center;
+}
+.modal-block .modal-content .block-with-text .popular-product-text p {
+  padding-left: 15px;
+  text-align: center;
+}
+.modal-block .modal-content .block-with-button {
+  padding-top: 15px;
+  text-align: center;
+}
+.modal-block .close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  padding: 15px;
+  -webkit-animation-name: slineIn;
+  -webkit-animation-duration: 1s;
+  animation-name: slideIn;
+  animation-duration: 1s;
+}
+.modal-block .close:hover,
+.modal-block .close:focus {
+  color: #170C04;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    left: -1000px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    left: -1000px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    opacity: 1;
+  }
+}
 .title_for_subscription {
   text-align: center;
   margin: 0 auto;
